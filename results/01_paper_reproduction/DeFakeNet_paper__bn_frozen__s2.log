@@ -1,0 +1,62 @@
+[DeFakeNet_paper__bn_frozen__s2] params total 25,664,001 | trainable 25,573,121 | non-trainable 90,880 | layers 195
+Epoch 1/40
+188/188 - 90s - loss: 0.7009 - accuracy: 0.5073 - val_loss: 0.6885 - val_accuracy: 0.5005 - lr: 1.0000e-04 - 90s/epoch - 481ms/step
+Epoch 2/40
+188/188 - 66s - loss: 0.6475 - accuracy: 0.6232 - val_loss: 0.6037 - val_accuracy: 0.7115 - lr: 1.0000e-04 - 66s/epoch - 351ms/step
+Epoch 3/40
+188/188 - 65s - loss: 0.6224 - accuracy: 0.6598 - val_loss: 0.5359 - val_accuracy: 0.7265 - lr: 1.0000e-04 - 65s/epoch - 348ms/step
+Epoch 4/40
+188/188 - 64s - loss: 0.5528 - accuracy: 0.7205 - val_loss: 0.5469 - val_accuracy: 0.7210 - lr: 1.0000e-04 - 64s/epoch - 341ms/step
+Epoch 5/40
+188/188 - 65s - loss: 0.5091 - accuracy: 0.7623 - val_loss: 0.4999 - val_accuracy: 0.7665 - lr: 1.0000e-04 - 65s/epoch - 348ms/step
+Epoch 6/40
+188/188 - 65s - loss: 0.4747 - accuracy: 0.7795 - val_loss: 0.4263 - val_accuracy: 0.8015 - lr: 1.0000e-04 - 65s/epoch - 348ms/step
+Epoch 7/40
+188/188 - 65s - loss: 0.4219 - accuracy: 0.8115 - val_loss: 0.4182 - val_accuracy: 0.8075 - lr: 1.0000e-04 - 65s/epoch - 347ms/step
+Epoch 8/40
+188/188 - 65s - loss: 0.4029 - accuracy: 0.8173 - val_loss: 0.3850 - val_accuracy: 0.8295 - lr: 1.0000e-04 - 65s/epoch - 348ms/step
+Epoch 9/40
+188/188 - 66s - loss: 0.3735 - accuracy: 0.8355 - val_loss: 0.3562 - val_accuracy: 0.8405 - lr: 1.0000e-04 - 66s/epoch - 349ms/step
+Epoch 10/40
+188/188 - 65s - loss: 0.3453 - accuracy: 0.8512 - val_loss: 0.3306 - val_accuracy: 0.8615 - lr: 1.0000e-04 - 65s/epoch - 348ms/step
+Epoch 11/40
+188/188 - 64s - loss: 0.3006 - accuracy: 0.8757 - val_loss: 0.4736 - val_accuracy: 0.8130 - lr: 1.0000e-04 - 64s/epoch - 340ms/step
+Epoch 12/40
+188/188 - 64s - loss: 0.3122 - accuracy: 0.8655 - val_loss: 0.3382 - val_accuracy: 0.8540 - lr: 1.0000e-04 - 64s/epoch - 339ms/step
+Epoch 13/40
+
+Epoch 13: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+188/188 - 64s - loss: 0.2899 - accuracy: 0.8792 - val_loss: 0.3343 - val_accuracy: 0.8580 - lr: 1.0000e-04 - 64s/epoch - 340ms/step
+Epoch 14/40
+188/188 - 64s - loss: 0.2205 - accuracy: 0.9152 - val_loss: 0.3475 - val_accuracy: 0.8530 - lr: 5.0000e-05 - 64s/epoch - 340ms/step
+Epoch 15/40
+188/188 - 65s - loss: 0.1950 - accuracy: 0.9215 - val_loss: 0.2596 - val_accuracy: 0.9010 - lr: 5.0000e-05 - 65s/epoch - 348ms/step
+Epoch 16/40
+188/188 - 64s - loss: 0.1788 - accuracy: 0.9298 - val_loss: 0.2770 - val_accuracy: 0.8815 - lr: 5.0000e-05 - 64s/epoch - 341ms/step
+Epoch 17/40
+188/188 - 64s - loss: 0.1670 - accuracy: 0.9352 - val_loss: 0.3300 - val_accuracy: 0.8830 - lr: 5.0000e-05 - 64s/epoch - 340ms/step
+Epoch 18/40
+
+Epoch 18: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+188/188 - 64s - loss: 0.1500 - accuracy: 0.9402 - val_loss: 0.2651 - val_accuracy: 0.8980 - lr: 5.0000e-05 - 64s/epoch - 340ms/step
+Epoch 19/40
+188/188 - 65s - loss: 0.1225 - accuracy: 0.9512 - val_loss: 0.2535 - val_accuracy: 0.9090 - lr: 2.5000e-05 - 65s/epoch - 347ms/step
+Epoch 20/40
+188/188 - 64s - loss: 0.0979 - accuracy: 0.9625 - val_loss: 0.2594 - val_accuracy: 0.9055 - lr: 2.5000e-05 - 64s/epoch - 341ms/step
+Epoch 21/40
+188/188 - 65s - loss: 0.1016 - accuracy: 0.9622 - val_loss: 0.2300 - val_accuracy: 0.9150 - lr: 2.5000e-05 - 65s/epoch - 348ms/step
+Epoch 22/40
+188/188 - 64s - loss: 0.0970 - accuracy: 0.9620 - val_loss: 0.2671 - val_accuracy: 0.9005 - lr: 2.5000e-05 - 64s/epoch - 340ms/step
+Epoch 23/40
+188/188 - 64s - loss: 0.0934 - accuracy: 0.9637 - val_loss: 0.2398 - val_accuracy: 0.9145 - lr: 2.5000e-05 - 64s/epoch - 341ms/step
+Epoch 24/40
+
+Epoch 24: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+188/188 - 64s - loss: 0.0880 - accuracy: 0.9677 - val_loss: 0.2378 - val_accuracy: 0.9135 - lr: 2.5000e-05 - 64s/epoch - 341ms/step
+Epoch 25/40
+188/188 - 64s - loss: 0.0665 - accuracy: 0.9767 - val_loss: 0.2406 - val_accuracy: 0.9275 - lr: 1.2500e-05 - 64s/epoch - 340ms/step
+Epoch 26/40
+188/188 - 64s - loss: 0.0581 - accuracy: 0.9778 - val_loss: 0.2553 - val_accuracy: 0.9215 - lr: 1.2500e-05 - 64s/epoch - 340ms/step
+Epoch 26: early stopping
+Restoring model weights from the end of the best epoch: 21.
+[DeFakeNet_paper__bn_frozen__s2] DONE test acc 92.40 | AUC 97.67 | best epoch 21 | stopped 26

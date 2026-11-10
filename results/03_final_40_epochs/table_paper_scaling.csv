@@ -1,0 +1,3 @@
+Input scaling,Seeds,Acc %,AUC %,MCC %
+0..1 (the paper's),42,98.40,99.83,96.80
+-1..1 (what ResNet50V2 expects),"1, 2",98.53 ± 0.25,99.86 ± 0.02,97.05 ± 0.49

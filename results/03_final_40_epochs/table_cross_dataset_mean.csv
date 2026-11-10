@@ -1,0 +1,4 @@
+,RVF10K Acc %,RVF10K Acc %,RVF10K AUC %,RVF10K AUC %,stylegan_140k | Acc %,stylegan_140k | Acc %,stylegan_140k | AUC %,stylegan_140k | AUC %,sdxl_faces | Acc %,sdxl_faces | Acc %,sdxl_faces | AUC %,sdxl_faces | AUC %,openforensics | Acc %,openforensics | Acc %,openforensics | AUC %,openforensics | AUC %
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+DeFakeNet-Lite (ours),98.75,0.05,99.927,0.013,98.967,0.076,99.958,0.012,48.9,0.132,42.884,2.862,53.7,1.375,57.944,1.774
+DeFakeNet + our recipe,98.5,0.35,99.855,0.094,98.35,0.265,99.822,0.092,48.95,0.35,62.577,24.162,50.833,0.895,47.152,3.935

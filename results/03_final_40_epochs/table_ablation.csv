@@ -1,0 +1,9 @@
+Switched back to the paper's way,Acc %,AUC %,MCC %,Δ Acc (pt),Δ AUC (pt),only full right / only ablated right,McNemar p
+nothing (full recipe),98.45,99.87,96.9,0.0,0.0,-,
+"old heavy augmentation (rotate, 20% shift, zoom, upside-down flips)",94.6,98.8851,89.2178,-3.85,-0.9849,92 / 15,0.0
+images shrunk to 224 x 224,98.0,99.6653,96.0008,-0.45,-0.2047,25 / 16,0.211
+BatchNorm not frozen,98.25,99.8212,96.5012,-0.2,-0.0488,11 / 7,0.4807
+no EMA weight averaging,98.5,99.8982,97.0031,0.05,0.0282,10 / 11,1.0
+no label smoothing,98.6,99.8958,97.2008,0.15,0.0258,10 / 13,0.6776
+no frozen warm-up (30 epochs of full fine-tuning),99.05,99.964,98.1083,0.6,0.094,11 / 23,0.0576
+plain Adam with a constant learning rate,99.05,99.9618,98.1059,0.6,0.0918,5 / 17,0.0169

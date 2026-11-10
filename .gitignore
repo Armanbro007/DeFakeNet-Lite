@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Data and trained models (downloaded or created by the notebooks)
+data/
+external/
+*.zip
+*.keras
+*.h5
+*.tflite
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

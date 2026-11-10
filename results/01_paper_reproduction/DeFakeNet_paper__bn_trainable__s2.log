@@ -1,0 +1,32 @@
+[DeFakeNet_paper__bn_trainable__s2] params total 25,664,001 | trainable 25,618,561 | non-trainable 45,440 | layers 195
+Epoch 1/40
+188/188 - 125s - loss: 0.5246 - accuracy: 0.7347 - val_loss: 0.4260 - val_accuracy: 0.8125 - lr: 1.0000e-04 - 125s/epoch - 666ms/step
+Epoch 2/40
+188/188 - 82s - loss: 0.3591 - accuracy: 0.8423 - val_loss: 0.6197 - val_accuracy: 0.7560 - lr: 1.0000e-04 - 82s/epoch - 438ms/step
+Epoch 3/40
+188/188 - 87s - loss: 0.2814 - accuracy: 0.8815 - val_loss: 0.3726 - val_accuracy: 0.8365 - lr: 1.0000e-04 - 87s/epoch - 462ms/step
+Epoch 4/40
+188/188 - 85s - loss: 0.2294 - accuracy: 0.9080 - val_loss: 0.3513 - val_accuracy: 0.8530 - lr: 1.0000e-04 - 85s/epoch - 451ms/step
+Epoch 5/40
+188/188 - 83s - loss: 0.2004 - accuracy: 0.9215 - val_loss: 0.4936 - val_accuracy: 0.8155 - lr: 1.0000e-04 - 83s/epoch - 444ms/step
+Epoch 6/40
+188/188 - 82s - loss: 0.1779 - accuracy: 0.9283 - val_loss: 0.2220 - val_accuracy: 0.9115 - lr: 1.0000e-04 - 82s/epoch - 437ms/step
+Epoch 7/40
+188/188 - 82s - loss: 0.1632 - accuracy: 0.9362 - val_loss: 0.6110 - val_accuracy: 0.7850 - lr: 1.0000e-04 - 82s/epoch - 436ms/step
+Epoch 8/40
+188/188 - 87s - loss: 0.1446 - accuracy: 0.9427 - val_loss: 0.2167 - val_accuracy: 0.9135 - lr: 1.0000e-04 - 87s/epoch - 461ms/step
+Epoch 9/40
+188/188 - 83s - loss: 0.1326 - accuracy: 0.9507 - val_loss: 0.2564 - val_accuracy: 0.9025 - lr: 1.0000e-04 - 83s/epoch - 441ms/step
+Epoch 10/40
+188/188 - 83s - loss: 0.1291 - accuracy: 0.9520 - val_loss: 0.2384 - val_accuracy: 0.9080 - lr: 1.0000e-04 - 83s/epoch - 441ms/step
+Epoch 11/40
+
+Epoch 11: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+188/188 - 83s - loss: 0.1203 - accuracy: 0.9567 - val_loss: 0.2429 - val_accuracy: 0.9170 - lr: 1.0000e-04 - 83s/epoch - 444ms/step
+Epoch 12/40
+188/188 - 89s - loss: 0.0846 - accuracy: 0.9670 - val_loss: 0.3574 - val_accuracy: 0.8920 - lr: 5.0000e-05 - 89s/epoch - 472ms/step
+Epoch 13/40
+188/188 - 86s - loss: 0.0783 - accuracy: 0.9708 - val_loss: 0.5820 - val_accuracy: 0.8600 - lr: 5.0000e-05 - 86s/epoch - 458ms/step
+Epoch 13: early stopping
+Restoring model weights from the end of the best epoch: 8.
+[DeFakeNet_paper__bn_trainable__s2] DONE test acc 90.75 | AUC 96.94 | best epoch 8 | stopped 13

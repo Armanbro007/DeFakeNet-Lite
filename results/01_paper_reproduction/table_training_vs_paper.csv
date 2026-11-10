@@ -1,0 +1,8 @@
+run,train_acc_ep1,train_acc_ep12,val_acc_ep12,first_lr_cut_epoch,best_epoch,best_val_loss,stopped_epoch,final_train_acc,distance
+PAPER,55.65,86.98,82.95,13,29,0.2365,34,98.88,0.0
+DeFakeNet_paper__bn_frozen__s1,52.02,83.52,81.4,20,26,0.2622,31,97.35,0.122
+DeFakeNet_paper__bn_frozen__s2,50.73,86.55,85.4,14,21,0.23,26,97.78,0.094
+DeFakeNet_paper__bn_frozen__s42,50.87,79.47,78.95,27,23,0.3007,28,94.17,0.24
+DeFakeNet_paper__bn_trainable__s1,73.48,,,9,5,0.1869,10,96.5,0.549
+DeFakeNet_paper__bn_trainable__s2,73.47,96.7,89.2,12,8,0.2167,13,97.08,0.253
+DeFakeNet_paper__bn_trainable__s42,73.25,,,6,6,0.1531,11,97.67,0.586

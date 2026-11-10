@@ -1,0 +1,30 @@
+[DeFakeNet_paper__bn_trainable__s42] params total 25,664,001 | trainable 25,618,561 | non-trainable 45,440 | layers 195
+Epoch 1/40
+188/188 - 128s - loss: 0.5237 - accuracy: 0.7325 - val_loss: 0.4519 - val_accuracy: 0.7825 - lr: 1.0000e-04 - 128s/epoch - 679ms/step
+Epoch 2/40
+188/188 - 81s - loss: 0.3507 - accuracy: 0.8490 - val_loss: 0.3507 - val_accuracy: 0.8495 - lr: 1.0000e-04 - 81s/epoch - 430ms/step
+Epoch 3/40
+188/188 - 86s - loss: 0.2768 - accuracy: 0.8818 - val_loss: 0.6963 - val_accuracy: 0.7100 - lr: 1.0000e-04 - 86s/epoch - 456ms/step
+Epoch 4/40
+188/188 - 82s - loss: 0.2288 - accuracy: 0.9055 - val_loss: 0.3688 - val_accuracy: 0.8410 - lr: 1.0000e-04 - 82s/epoch - 434ms/step
+Epoch 5/40
+
+Epoch 5: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+188/188 - 89s - loss: 0.1990 - accuracy: 0.9192 - val_loss: 0.7657 - val_accuracy: 0.7765 - lr: 1.0000e-04 - 89s/epoch - 471ms/step
+Epoch 6/40
+188/188 - 90s - loss: 0.1394 - accuracy: 0.9465 - val_loss: 0.1531 - val_accuracy: 0.9410 - lr: 5.0000e-05 - 90s/epoch - 477ms/step
+Epoch 7/40
+188/188 - 89s - loss: 0.1144 - accuracy: 0.9562 - val_loss: 0.2965 - val_accuracy: 0.8845 - lr: 5.0000e-05 - 89s/epoch - 472ms/step
+Epoch 8/40
+188/188 - 85s - loss: 0.1041 - accuracy: 0.9587 - val_loss: 0.2179 - val_accuracy: 0.9190 - lr: 5.0000e-05 - 85s/epoch - 454ms/step
+Epoch 9/40
+
+Epoch 9: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+188/188 - 86s - loss: 0.0992 - accuracy: 0.9625 - val_loss: 0.3553 - val_accuracy: 0.8865 - lr: 5.0000e-05 - 86s/epoch - 457ms/step
+Epoch 10/40
+188/188 - 84s - loss: 0.0822 - accuracy: 0.9678 - val_loss: 0.2412 - val_accuracy: 0.9085 - lr: 2.5000e-05 - 84s/epoch - 448ms/step
+Epoch 11/40
+188/188 - 86s - loss: 0.0657 - accuracy: 0.9767 - val_loss: 0.1893 - val_accuracy: 0.9305 - lr: 2.5000e-05 - 86s/epoch - 458ms/step
+Epoch 11: early stopping
+Restoring model weights from the end of the best epoch: 6.
+[DeFakeNet_paper__bn_trainable__s42] DONE test acc 94.55 | AUC 98.92 | best epoch 6 | stopped 11

@@ -1,0 +1,26 @@
+[DeFakeNet_paper__bn_trainable__s1] params total 25,664,001 | trainable 25,618,561 | non-trainable 45,440 | layers 195
+Epoch 1/40
+188/188 - 144s - loss: 0.5285 - accuracy: 0.7348 - val_loss: 0.5747 - val_accuracy: 0.7145 - lr: 1.0000e-04 - 144s/epoch - 764ms/step
+Epoch 2/40
+188/188 - 76s - loss: 0.3547 - accuracy: 0.8463 - val_loss: 0.3637 - val_accuracy: 0.8480 - lr: 1.0000e-04 - 76s/epoch - 403ms/step
+Epoch 3/40
+188/188 - 80s - loss: 0.2938 - accuracy: 0.8790 - val_loss: 0.4515 - val_accuracy: 0.8240 - lr: 1.0000e-04 - 80s/epoch - 424ms/step
+Epoch 4/40
+188/188 - 89s - loss: 0.2404 - accuracy: 0.9018 - val_loss: 0.5736 - val_accuracy: 0.7520 - lr: 1.0000e-04 - 89s/epoch - 474ms/step
+Epoch 5/40
+188/188 - 82s - loss: 0.2037 - accuracy: 0.9163 - val_loss: 0.1869 - val_accuracy: 0.9215 - lr: 1.0000e-04 - 82s/epoch - 437ms/step
+Epoch 6/40
+188/188 - 88s - loss: 0.1772 - accuracy: 0.9310 - val_loss: 0.2230 - val_accuracy: 0.9190 - lr: 1.0000e-04 - 88s/epoch - 467ms/step
+Epoch 7/40
+188/188 - 86s - loss: 0.1759 - accuracy: 0.9272 - val_loss: 0.3190 - val_accuracy: 0.8720 - lr: 1.0000e-04 - 86s/epoch - 458ms/step
+Epoch 8/40
+
+Epoch 8: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+188/188 - 78s - loss: 0.1547 - accuracy: 0.9382 - val_loss: 0.2815 - val_accuracy: 0.9005 - lr: 1.0000e-04 - 78s/epoch - 413ms/step
+Epoch 9/40
+188/188 - 82s - loss: 0.1008 - accuracy: 0.9633 - val_loss: 0.2671 - val_accuracy: 0.8995 - lr: 5.0000e-05 - 82s/epoch - 434ms/step
+Epoch 10/40
+188/188 - 91s - loss: 0.0958 - accuracy: 0.9650 - val_loss: 0.1896 - val_accuracy: 0.9250 - lr: 5.0000e-05 - 91s/epoch - 482ms/step
+Epoch 10: early stopping
+Restoring model weights from the end of the best epoch: 5.
+[DeFakeNet_paper__bn_trainable__s1] DONE test acc 93.10 | AUC 97.84 | best epoch 5 | stopped 10

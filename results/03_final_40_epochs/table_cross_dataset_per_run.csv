@@ -1,0 +1,7 @@
+Run,Model,RVF10K Acc %,RVF10K AUC %,stylegan_140k | Acc %,stylegan_140k | AUC %,sdxl_faces | Acc %,sdxl_faces | AUC %,openforensics | Acc %,openforensics | AUC %
+DeFakeNet_Lite__e40__s42,DeFakeNet_Lite,98.75,99.913,98.9,99.954,48.75,46.15,54.0,58.559
+DeFakeNet_NR__e40__s42,DeFakeNet_NR,98.65,99.911,98.55,99.889,48.7,80.039,49.85,43.785
+DeFakeNet_Lite__e40__s1,DeFakeNet_Lite,98.8,99.938,99.05,99.948,48.95,40.811,52.2,55.944
+DeFakeNet_NR__e40__s1,DeFakeNet_NR,98.1,99.746,98.45,99.86,48.8,35.002,51.6,51.478
+DeFakeNet_Lite__e40__s2,DeFakeNet_Lite,98.7,99.93,98.95,99.971,49.0,41.691,54.9,59.33
+DeFakeNet_NR__e40__s2,DeFakeNet_NR,98.75,99.908,98.05,99.717,49.35,72.69,51.05,46.192

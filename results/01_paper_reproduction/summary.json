@@ -1,0 +1,31 @@
+{
+ "faithful_variant": "bn_frozen",
+ "distance_by_variant": {
+  "bn_trainable": 0.4630197316355648,
+  "bn_frozen": 0.15210312269714288
+ },
+ "paper": {
+  "acc": 91.95,
+  "auc": 97.64,
+  "pr_auc": 97.4,
+  "f1": 91.81,
+  "mcc": 83.95,
+  "precision": 93.47,
+  "recall": 90.2,
+  "specificity": 93.7,
+  "tn": 937,
+  "fp": 63,
+  "fn": 98,
+  "tp": 902
+ },
+ "paper_run": {
+  "train_acc_ep1": 55.65,
+  "train_acc_ep12": 86.98,
+  "val_acc_ep12": 82.95,
+  "first_lr_cut_epoch": 13,
+  "best_epoch": 29,
+  "best_val_loss": 0.2365,
+  "stopped_epoch": 34,
+  "final_train_acc": 98.88
+ }
+}

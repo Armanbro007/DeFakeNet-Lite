@@ -1,0 +1,7 @@
+Run,Model,Seed,Params (M),GMACs,Acc %,AUC %,PR-AUC %,MCC %,F1 %,Precision %,Recall (real) %,Specificity (fake) %,Fakes caught /1000,Reals caught /1000,TFLite fp16 MB,GPU ms/img b32,CPU ms/img b1,Train min,Epochs run,Best FT epoch
+DeFakeNet_Lite__e40__s42,DeFakeNet-Lite (ours),42,1.901,0.208,98.75,99.913,99.911,97.504,98.756,98.315,99.2,98.3,983,992,3.866,1.418,25.537,31.848,40,28
+DeFakeNet_NR__e40__s42,DeFakeNet + our recipe,42,25.664,4.566,98.65,99.911,99.91,97.311,98.66,97.931,99.4,97.9,979,994,51.318,3.962,74.461,68.046,40,35
+DeFakeNet_Lite__e40__s1,DeFakeNet-Lite (ours),1,1.901,0.208,98.8,99.938,99.937,97.601,98.802,98.606,99.0,98.6,986,990,3.866,1.385,24.211,31.647,40,29
+DeFakeNet_NR__e40__s1,DeFakeNet + our recipe,1,25.664,4.566,98.1,99.746,99.633,96.201,98.104,97.908,98.3,97.9,979,983,51.318,3.967,73.042,65.958,39,26
+DeFakeNet_Lite__e40__s2,DeFakeNet-Lite (ours),2,1.901,0.208,98.7,99.93,99.929,97.407,98.708,98.123,99.3,98.1,981,993,3.866,1.374,22.807,31.523,40,28
+DeFakeNet_NR__e40__s2,DeFakeNet + our recipe,2,25.664,4.566,98.75,99.908,99.902,97.508,98.758,98.124,99.4,98.1,981,994,51.318,3.959,72.838,67.752,40,32

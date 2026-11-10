@@ -1,0 +1,12 @@
+# Tested on Kaggle: Python 3.13, TensorFlow 2.21, Keras 3.13, 2 x NVIDIA T4
+tensorflow>=2.16        # Keras 3 (notebooks 02 and 03)
+tf_keras>=2.16          # Keras 2 API for the paper-faithful rebuild (notebook 01); use the same minor version as TensorFlow
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+pillow
+requests
+pyarrow                 # reads the Hugging Face parquet files of the cross-dataset sets
+kagglehub               # optional: CIPLab download in notebook 02

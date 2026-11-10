@@ -1,0 +1,7 @@
+,DeFakeNet + our recipe,DeFakeNet-Lite (ours),DeFakeNet ÷ Lite (x)
+Parameters (M),25.664,1.901,13.499
+GMACs per image,4.566,0.208,21.997
+TFLite fp16 size (MB),51.318,3.866,13.273
+CPU ms per image (batch 1),73.447,24.185,3.037
+GPU ms per image (batch 32),3.962,1.392,2.846
+Training time (min),67.252,31.673,2.123
