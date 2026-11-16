@@ -7,7 +7,7 @@ Undergraduate thesis project, Department of Computer Science & Engineering, East
 * **Author:** Arman Rahman
 * **Supervisor:** Md. Jamil Uddin, Lecturer
 
-DeFakeNet-Lite tells real face photos apart from StyleGAN-generated faces. It combines a **MobileNetV3-Large (width 0.75)** backbone pre-trained on ImageNet, a compact classification head (Dropout → Dense 128 → Dropout → sigmoid) and an improved training recipe. It has **1.90 M parameters**; the DeFakeNet base model has 25.66 M.
+DeFakeNet-Lite tells real face photos apart from StyleGAN-generated faces. It combines a **MobileNetV3-Large (width 0.75)** backbone pre-trained on ImageNet, a compact classification head (Dropout → Dense 128 → Dropout → sigmoid) and an improved training configuration. It has **1.90 M parameters**; the DeFakeNet base model has 25.66 M.
 
 On the RVF10K test set, DeFakeNet-Lite reaches **98.75 ± 0.05 % accuracy** (mean ± std over 3 seeds). The base paper reports 91.95 % for DeFakeNet, and DeFakeNet-Lite is 13.5× smaller and 3× faster on a CPU.
 
@@ -23,8 +23,8 @@ DeFakeNet fine-tunes ResNet50V2 with a Dense 1024 head. The paper reports 91.95 
 
 | | Question | Answer in this repository |
 | --- | --- | --- |
-| **RQ1** | Is DeFakeNet's result limited by its **architecture** or by its **training recipe**, and which part of the recipe matters? | The same DeFakeNet architecture reaches 98.50 ± 0.35 % with the new recipe (+6.55 points). The ablation shows the paper's heavy augmentation is the main cause (−3.85 points, McNemar p < 0.001). The paper's 0–1 pixel scaling is not a cause. |
-| **RQ2** | Can a much **lighter** model keep the same accuracy? | Yes. DeFakeNet-Lite reaches 98.75 ± 0.05 %, and McNemar tests against DeFakeNet with the same recipe find no significant difference (p = 0.07, 1.00, 0.88). DeFakeNet-Lite has 13.5× fewer parameters and 22× fewer GMACs. |
+| **RQ1** | Is DeFakeNet's result limited by its **architecture** or by its **training configuration**, and which part of the configuration matters? | The same DeFakeNet architecture reaches 98.50 ± 0.35 % with the improved training configuration (+6.55 points). The ablation shows the paper's heavy augmentation is the main cause (−3.85 points, McNemar p < 0.001). The paper's 0–1 pixel scaling is not a cause. |
+| **RQ2** | Can a much **lighter** model keep the same accuracy? | Yes. DeFakeNet-Lite reaches 98.75 ± 0.05 %, and McNemar tests against DeFakeNet with the same training configuration find no significant difference (p = 0.07, 1.00, 0.88). DeFakeNet-Lite has 13.5× fewer parameters and 22× fewer GMACs. |
 | **RQ3** | Do the detectors **generalise** to unseen datasets and other kinds of fakes, without retraining? | Only to fakes of the same kind. Unseen StyleGAN faces are detected almost perfectly (AUC 99.96 %). Diffusion faces (Stable Diffusion XL) and in-the-wild manipulations stay near chance level. This is the main limitation. |
 
 ## Results
@@ -35,12 +35,12 @@ All numbers are on the RVF10K test set (2,000 images, threshold 0.5, Real = posi
 | --- | --- | --- | --- | --- | --- | --- |
 | DeFakeNet (paper, reported, 1 run) | 25.66 M | 91.95 | 97.64 | 97.40 | 91.81 | 83.95 |
 | DeFakeNet, paper-faithful reproduction (3 runs) | 25.66 M | 90.57 ± 2.18 | 96.54 ± 1.48 | 96.48 ± 1.59 | 90.60 ± 2.10 | 81.14 ± 4.36 |
-| DeFakeNet + new recipe | 25.66 M | 98.50 ± 0.35 | 99.85 ± 0.09 | 99.82 ± 0.16 | 98.51 ± 0.35 | 97.01 ± 0.70 |
+| DeFakeNet + improved training | 25.66 M | 98.50 ± 0.35 | 99.85 ± 0.09 | 99.82 ± 0.16 | 98.51 ± 0.35 | 97.01 ± 0.70 |
 | **DeFakeNet-Lite** | **1.90 M** | **98.75 ± 0.05** | **99.93 ± 0.01** | **99.93 ± 0.01** | **98.76 ± 0.05** | **97.50 ± 0.10** |
 
 ### Cost (measured on the same machine)
 
-| | DeFakeNet + new recipe | DeFakeNet-Lite | Ratio |
+| | DeFakeNet + improved training | DeFakeNet-Lite | Ratio |
 | --- | --- | --- | --- |
 | Parameters (M) | 25.66 | 1.90 | 13.5× |
 | GMACs per image | 4.57 | 0.21 | 22.0× |
@@ -49,9 +49,9 @@ All numbers are on the RVF10K test set (2,000 images, threshold 0.5, Real = posi
 | GPU latency, batch 32, T4 (ms/image) | 3.96 | 1.39 | 2.8× |
 | Training time, 40 epochs, T4 (min) | 67.3 | 31.7 | 2.1× |
 
-### Ablation: one part of the recipe switched back to the paper's way
+### Ablation: one part of the training configuration switched back to the paper's way
 
-DeFakeNet-Lite, seed 42, 30 epochs. The reference is the full recipe at 98.45 %.
+DeFakeNet-Lite, seed 42, 30 epochs. The reference is the full training configuration at 98.45 %.
 
 | Part switched back | Accuracy % | Δ (points) | McNemar p |
 | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ DeFakeNet-Lite, seed 42, 30 epochs. The reference is the full recipe at 98.45 %.
 | no frozen warm-up | 99.05 | +0.60 | 0.058 |
 | plain Adam, constant learning rate | 99.05 | +0.60 | 0.017 |
 
-DeFakeNet with the new recipe but the paper's 0–1 pixel scaling reaches 98.40 %. The −1 to 1 scaling gives 98.53 ± 0.25 %, so the scaling has no real effect.
+DeFakeNet with the improved training configuration but the paper's 0–1 pixel scaling reaches 98.40 %. The −1 to 1 scaling gives 98.53 ± 0.25 %, so the scaling has no real effect.
 
 ![Ablation](figures/F09_ablation.png)
 
@@ -71,7 +71,7 @@ DeFakeNet with the new recipe but the paper's 0–1 pixel scaling reaches 98.40 
 
 The test uses 1,000 real and 1,000 fake images per set. Any image that is identical to an RVF10K image is removed. The table shows ROC-AUC %, as mean ± std over 3 seeds.
 
-| Dataset | Kind of fake | DeFakeNet-Lite | DeFakeNet + new recipe |
+| Dataset | Kind of fake | DeFakeNet-Lite | DeFakeNet + improved training |
 | --- | --- | --- | --- |
 | RVF10K (test) | StyleGAN | 99.93 ± 0.01 | 99.85 ± 0.09 |
 | 140k Real and Fake Faces | StyleGAN, new images | 99.96 ± 0.01 | 99.82 ± 0.09 |
@@ -80,9 +80,9 @@ The test uses 1,000 real and 1,000 fake images per set. Any image that is identi
 
 ![Cross-dataset AUC](figures/F10_cross_dataset_auc.png)
 
-## The training recipe
+## The training configuration
 
-| Setting | DeFakeNet paper | New recipe |
+| Setting | DeFakeNet paper | Improved configuration |
 | --- | --- | --- |
 | Image size | 224 × 224 | 256 × 256 (native size) |
 | Augmentation | rotation 10°, 20 % shift, zoom 20 %, shear, horizontal + vertical flips | horizontal flip + 5 % shift |
@@ -101,7 +101,7 @@ The test set is never used for training or for choosing anything.
 ```
 notebooks/
   01_defakenet_paper_faithful_reproduction.ipynb   DeFakeNet rebuilt from the paper only, 2 BatchNorm variants x 3 seeds
-  02_recipe_ablation_and_cross_dataset.ipynb       new recipe, 30 epochs: ablation, 0-1 scaling, cross-dataset test
+  02_training_ablation_and_cross_dataset.ipynb     improved training, 30 epochs: ablation, 0-1 scaling, cross-dataset test
   03_defakenet_lite_final_experiments.ipynb        final 40-epoch runs, 3 seeds, cost, cross-dataset test, all figures
 results/
   01_paper_reproduction/   per-run JSON (metrics + training history), test scores (.npz), epoch logs, tables, plots
